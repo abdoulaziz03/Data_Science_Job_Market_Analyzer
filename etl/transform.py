@@ -13,10 +13,12 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
-RAW_PATH = "../data/raw/jobs_raw.csv"
-CLEAN_PATH = "../data/processed/jobs_clean.csv"
+RAW_PATH = "data/raw/jobs_raw.csv"
+CLEAN_PATH = "data/processed/jobs_clean.csv"
 
 # Compétences à détecter dans les descriptions
 SKILLS_KEYWORDS = [
